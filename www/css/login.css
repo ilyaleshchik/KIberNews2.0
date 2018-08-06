@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* Главные стили*/
+*{
+	margin:0;
+	padding:0;
+	outline:none;
+}
+html{height:100%; width:100%;}
+
+@font-face {
+	font-family:Robot;
+	src:url(../fonts/Robot.ttf);
+}
+
+div{
+	box-sizing: border-box;
+}
+
+body {
+	float:left;
+	width:100%;
+	height:100%;
+	color: #fafafa;
+	font-family: "Segoe UI", Arial, sans-serif;
+	font-size:1em;
+	line-height:127%;
+	background-color: #28e4e4;
+}
+
+.window{
+		width:250px;
+		height: 300px;
+		background-color:#4da4d6;
+		font-family: Robot;
+		font-size: 25px;
+		margin:0 auto;
+		margin-top:340px; 
+		text-transform: uppercase;
+		color:#f1ffdc;
+		padding: 40px;
+		border-radius: 10px;
+		box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+
+.login{
+	margin-top:20px;
+}
+
+.email{
+	margin-top:20px;
+}
+
+.password{
+	margin-top:20px;
+}
+
+.window input{
+	border-color: #f4bf4d;
+	border-radius: 4px;
+}
+
+
+.window input:focus{
+	border-color: #83f87b;
+}
+
+.dologin{
+	margin-top: 20px;
+}
+
+.dologin input{
+	font-family: Robot;
+	border: 0.5px solid #2bebb3;
+	border-radius: 4px;
+	text-transform: uppercase;
+	margin-left:25px;
+	background-color: #2bebb3;
+	width:120px;
+	height:30px;
+}
+
+#err{
+		width: 100%;
+	background-color: #f24444;
+	height: 50px;
+	text-align: center;
+	font-family: Robot;
+	text-transform: uppercase;
+	padding-top: 15px
+}

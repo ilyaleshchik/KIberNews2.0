@@ -1,0 +1,926 @@
+*{
+	margin:0;
+	padding:0;
+}
+div{
+	box-sizing: border-box;
+}
+.clearfix:after {
+  content: '';
+  display: table;
+  width:100%;
+  clear: both;
+}
+@font-face {
+	font-family:Angled;
+	src:url(../fonts/Angled.ttf);
+}
+@font-face {
+	font-family:Raleway;
+	src:url(../fonts/RalewaySemiBold.ttf);
+}
+@font-face {
+	font-family:Virgo;
+	src:url(../fonts/virgo.ttf);
+}
+@font-face {
+	font-family:Ubuntu;
+	src:url(../fonts/Ubuntu.ttf);
+}
+@font-face {
+	font-family:RalewayExtraBold;
+	src:url(../fonts/RalewayExtraBold.ttf);
+}
+
+@font-face {
+	font-family:Quantum;
+	src:url(../fonts/Quantum.otf);
+}
+
+@font-face {
+	font-family:RalewaySemiBold;
+	src:url(../fonts/RalewaySemiBold.ttf);
+}
+
+@font-face {
+	font-family:RalewayExtraBold;
+	src:url(../fonts/RalewayExtraBold.ttf);
+}
+
+html{
+	padding-bottom: 100px;
+	width: 100%;
+}
+body{
+	background-color: #28e4e4;
+	width: 100%;
+}
+
+.container{
+	width:1425px;
+	margin:0 auto;
+}
+
+.logo{
+	float:left;
+}
+.logo img{
+	margin-top:15px;
+}
+
+
+.menu{
+	float:left;
+	margin-left:230px;
+}
+.menu a{
+	color:#fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size:15px;
+	font-family: Raleway;
+}
+
+.menu a:hover{
+	color:#000;
+	transition: .7s;
+}
+.menu li{
+	float:left;
+	display: block;
+	margin-right: 87px;
+	margin-top:30px;
+}
+
+.signup{
+	margin-top: 22px;
+	padding-top: 5px;
+	float:right;
+	width:90px;
+	height:26px;
+	background-color: #fff798;
+	text-align: center;
+	border-radius: 3px;
+}
+
+.signup a{
+	font-family: Raleway;
+	font-size:15px;
+	text-transform: uppercase;
+	color:#000;
+	text-decoration: none;
+}
+
+.window{
+	background-color: #b388ff;
+	border-radius: 3px;
+	box-shadow: -5px 0 10px rgba(0.1,0.1,0.1,0.3);
+	width: 1385px;
+	height: 70px;
+	margin-left: 20px;
+	margin-top: 120px;
+}
+
+.window .ligue{
+	float: left;
+	font-family:Raleway;
+	font-size: 15px;
+	margin-top: 25px;
+	margin-left: 7px;
+}
+
+
+.window .firstteam img{
+	height: 10px;
+	width: 25px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.window .firstteam{
+	float: left;
+	margin-left:180px;
+	margin-top: 15px;
+}
+
+
+.window .firstteam .country{
+	float: left;
+	width: 175px;
+	text-align:right;
+	font-family: Ubuntu;
+}
+.window .firstteam .teamone{
+	width: 200px;
+	text-align: right;
+	font-family:Ubuntu;
+}
+
+.time{
+	float: left;
+	text-align: center;
+	font-family: Ubuntu;
+	margin-top: 15px;
+	margin-left: 80px;
+}
+
+.window .secondteam img{
+	height: 10px;
+	float: left;
+	margin-top: 5px;
+	text-align: left;
+}
+
+.window .secondteam{
+	float: left;
+	margin-left:80px;
+	margin-top: 15px;
+}
+
+
+.window .secondteam .country{
+	float: left;
+	width: 175px;
+	text-align:left;
+	font-family: Ubuntu;
+	margin-left: 8px;
+}
+.window .secondteam .teamtwo{
+	width: 200px;
+	text-align: left;
+	font-family:Ubuntu;
+}
+
+/* Второй матч */
+
+.windowtwo{
+	background-color: #b388ff;
+	border-radius: 3px;
+	box-shadow: -5px 0 10px rgba(0.1,0.1,0.1,0.3);
+	width: 1385px;
+	height: 70px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.windowtwo .ligue{
+	float: left;
+	font-family:Raleway;
+	font-size: 15px;
+	margin-top: 25px;
+	margin-left: 7px;
+}
+
+
+.windowtwo .firstteam img{
+	height: 10px;
+	width: 25px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.windowtwo .firstteam{
+	float: left;
+	margin-left:180px;
+	margin-top: 15px;
+}
+
+
+.windowtwo .firstteam .country{
+	float: left;
+	width: 175px;
+	text-align:right;
+	font-family: Ubuntu;
+}
+.windowtwo .firstteam .teamone{
+	width: 200px;
+	text-align: right;
+	font-family:Ubuntu;
+}
+
+.time{
+	float: left;
+	text-align: center;
+	font-family: Ubuntu;
+	margin-top: 15px;
+	margin-left: 80px;
+}
+
+.windowtwo .secondteam img{
+	height: 10px;
+	float: left;
+	margin-top: 5px;
+	text-align: left;
+}
+
+.windowtwo .secondteam{
+	float: left;
+	margin-left:80px;
+	margin-top: 15px;
+}
+
+
+.windowtwo .secondteam .country{
+	float: left;
+	width: 175px;
+	text-align:left;
+	font-family: Ubuntu;
+	margin-left: 8px;
+}
+.windowtwo .secondteam .teamtwo{
+	width: 200px;
+	text-align: left;
+	font-family:Ubuntu;
+}
+
+
+/* Третий матч */
+.windowthree{
+	background-color: #b388ff;
+	border-radius: 3px;
+	box-shadow: -5px 0 10px rgba(0.1,0.1,0.1,0.3);
+	width: 1385px;
+	height: 70px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.windowthree .ligue{
+	float: left;
+	font-family:Raleway;
+	font-size: 15px;
+	margin-top: 25px;
+	margin-left: 7px;
+}
+
+
+.windowthree .firstteam img{
+	height: 10px;
+	width: 25px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.windowthree .firstteam{
+	float: left;
+	margin-left:180px;
+	margin-top: 15px;
+}
+
+
+.windowthree .firstteam .country{
+	float: left;
+	width: 175px;
+	text-align:right;
+	font-family: Ubuntu;
+}
+.windowthree .firstteam .teamone{
+	width: 200px;
+	text-align: right;
+	font-family:Ubuntu;
+}
+
+.time{
+	float: left;
+	text-align: center;
+	font-family: Ubuntu;
+	margin-top: 15px;
+	margin-left: 80px;
+}
+.windowthree .secondteam img{
+	height: 10px;
+	float: left;
+	margin-top: 5px;
+	text-align: left;
+}
+
+.windowthree .secondteam{
+	float: left;
+	margin-left:80px;
+	margin-top: 15px;
+}
+
+
+.windowthree .secondteam .country{
+	float: left;
+	width: 175px;
+	text-align:left;
+	font-family: Ubuntu;
+	margin-left: 8px;
+}
+.windowthree .secondteam .teamtwo{
+	width: 200px;
+	text-align: left;
+	font-family:Ubuntu;
+}
+
+
+/* Четвертый матч */
+.windowfour{
+	background-color: #b388ff;
+	border-radius: 3px;
+	box-shadow: -5px 0 10px rgba(0.1,0.1,0.1,0.3);
+	width: 1385px;
+	height: 70px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.windowfour .ligue{
+	float: left;
+	font-family:Raleway;
+	font-size: 15px;
+	margin-top: 25px;
+	margin-left: 7px;
+}
+
+
+.windowfour .firstteam img{
+	height: 10px;
+	width: 25px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.windowfour .firstteam{
+	float: left;
+	margin-left:180px;
+	margin-top: 15px;
+}
+
+
+.windowfour .firstteam .country{
+	float: left;
+	width: 175px;
+	text-align:right;
+	font-family: Ubuntu;
+}
+.windowfour .firstteam .teamone{
+	width: 200px;
+	text-align: right;
+	font-family:Ubuntu;
+}
+
+.time{
+	float: left;
+	text-align: center;
+	font-family: Ubuntu;
+	margin-top: 15px;
+	margin-left: 80px;
+}
+.windowfour .secondteam img{
+	height: 10px;
+	float: left;
+	margin-top: 5px;
+	text-align: left;
+}
+
+.windowfour .secondteam{
+	float: left;
+	margin-left:80px;
+	margin-top: 15px;
+}
+
+
+.windowfour .secondteam .country{
+	float: left;
+	width: 175px;
+	text-align:left;
+	font-family: Ubuntu;
+	margin-left: 8px;
+}
+.windowfour .secondteam .teamtwo{
+	width: 200px;
+	text-align: left;
+	font-family:Ubuntu;
+}
+
+/* Пятый матч */
+.windowfife{
+	background-color: #b388ff;
+	border-radius: 3px;
+	box-shadow: -5px 0 10px rgba(0.1,0.1,0.1,0.3);
+	width: 1385px;
+	height: 70px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.windowfife .ligue{
+	float: left;
+	font-family:Raleway;
+	font-size: 15px;
+	margin-top: 25px;
+	margin-left: 7px;
+}
+
+
+.windowfife .firstteam img{
+	height: 10px;
+	width: 25px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.windowfife .firstteam{
+	float: left;
+	margin-left:180px;
+	margin-top: 15px;
+}
+
+
+.windowfife .firstteam .country{
+	float: left;
+	width: 175px;
+	text-align:right;
+	font-family: Ubuntu;
+}
+.windowfife .firstteam .teamone{
+	width: 200px;
+	text-align: right;
+	font-family:Ubuntu;
+}
+
+.time{
+	float: left;
+	text-align: center;
+	font-family: Ubuntu;
+	margin-top: 15px;
+	margin-left: 80px;
+}
+.windowfife .secondteam img{
+	height: 10px;
+	float: left;
+	margin-top: 5px;
+	text-align: left;
+}
+
+.windowfife .secondteam{
+	float: left;
+	margin-left:80px;
+	margin-top: 15px;
+}
+
+
+.windowfife .secondteam .country{
+	float: left;
+	width: 175px;
+	text-align:left;
+	font-family: Ubuntu;
+	margin-left: 8px;
+}
+.windowfife .secondteam .teamtwo{
+	width: 200px;
+	text-align: left;
+	font-family:Ubuntu;
+}
+
+/* Шестой матч */
+.windowsix{
+	background-color: #b388ff;
+	border-radius: 3px;
+	box-shadow: -5px 0 10px rgba(0.1,0.1,0.1,0.3);
+	width: 1385px;
+	height: 70px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.windowsix .ligue{
+	float: left;
+	font-family:Raleway;
+	font-size: 15px;
+	margin-top: 25px;
+	margin-left: 7px;
+}
+
+
+.windowsix .firstteam img{
+	height: 10px;
+	width: 25px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.windowsix .firstteam{
+	float: left;
+	margin-left:180px;
+	margin-top: 15px;
+}
+
+
+.windowsix .firstteam .country{
+	float: left;
+	width: 175px;
+	text-align:right;
+	font-family: Ubuntu;
+}
+.windowsix .firstteam .teamone{
+	width: 200px;
+	text-align: right;
+	font-family:Ubuntu;
+}
+
+.time{
+	float: left;
+	text-align: center;
+	font-family: Ubuntu;
+	margin-top: 15px;
+	margin-left: 80px;
+}
+.windowsix .secondteam img{
+	height: 10px;
+	float: left;
+	margin-top: 5px;
+	text-align: left;
+}
+
+.windowsix .secondteam{
+	float: left;
+	margin-left:80px;
+	margin-top: 15px;
+}
+
+
+.windowsix .secondteam .country{
+	float: left;
+	width: 175px;
+	text-align:left;
+	font-family: Ubuntu;
+	margin-left: 8px;
+}
+.windowsix .secondteam .teamtwo{
+	width: 200px;
+	text-align: left;
+	font-family:Ubuntu;
+}
+
+/* Седьмой матч */
+.windowseven{
+	background-color: #b388ff;
+	border-radius: 3px;
+	box-shadow: -5px 0 10px rgba(0.1,0.1,0.1,0.3);
+	width: 1385px;
+	height: 70px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.windowseven .ligue{
+	float: left;
+	font-family:Raleway;
+	font-size: 15px;
+	margin-top: 25px;
+	margin-left: 7px;
+}
+
+
+.windowseven .firstteam img{
+	height: 10px;
+	width: 25px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.windowseven .firstteam{
+	float: left;
+	margin-left:180px;
+	margin-top: 15px;
+}
+
+
+.windowseven .firstteam .country{
+	float: left;
+	width: 175px;
+	text-align:right;
+	font-family: Ubuntu;
+}
+.windowseven .firstteam .teamone{
+	width: 200px;
+	text-align: right;
+	font-family:Ubuntu;
+}
+
+.time{
+	float: left;
+	text-align: center;
+	font-family: Ubuntu;
+	margin-top: 15px;
+	margin-left: 80px;
+}
+.windowseven .secondteam img{
+	height: 10px;
+	float: left;
+	margin-top: 5px;
+	text-align: left;
+}
+
+.windowseven .secondteam{
+	float: left;
+	margin-left:80px;
+	margin-top: 15px;
+}
+
+
+.windowseven .secondteam .country{
+	float: left;
+	width: 175px;
+	text-align:left;
+	font-family: Ubuntu;
+	margin-left: 8px;
+}
+.windowseven .secondteam .teamtwo{
+	width: 200px;
+	text-align: left;
+	font-family:Ubuntu;
+}
+
+
+/* Восьмойwindowseight матч */
+.windowseight{
+	background-color: #b388ff;
+	border-radius: 3px;
+	box-shadow: -5px 0 10px rgba(0.1,0.1,0.1,0.3);
+	width: 1385px;
+	height: 70px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.windowseight .ligue{
+	float: left;
+	font-family:Raleway;
+	font-size: 15px;
+	margin-top: 25px;
+	margin-left: 7px;
+}
+
+
+.windowseight .firstteam img{
+	height: 10px;
+	width: 25px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.windowseight .firstteam{
+	float: left;
+	margin-left:180px;
+	margin-top: 15px;
+}
+
+
+.windowseight .firstteam .country{
+	float: left;
+	width: 175px;
+	text-align:right;
+	font-family: Ubuntu;
+}
+.windowseight .firstteam .teamone{
+	width: 200px;
+	text-align: right;
+	font-family:Ubuntu;
+}
+
+.time{
+	float: left;
+	text-align: center;
+	font-family: Ubuntu;
+	margin-top: 15px;
+	margin-left: 80px;
+}
+.windowseight .secondteam img{
+	height: 10px;
+	float: left;
+	margin-top: 5px;
+	text-align: left;
+}
+
+.windowseight .secondteam{
+	float: left;
+	margin-left:80px;
+	margin-top: 15px;
+}
+
+
+.windowseight .secondteam .country{
+	float: left;
+	width: 175px;
+	text-align:left;
+	font-family: Ubuntu;
+	margin-left: 8px;
+}
+.windowseight .secondteam .teamtwo{
+	width: 200px;
+	text-align: left;
+	font-family:Ubuntu;
+}
+
+/* Девятый матч */
+.windownine{
+	background-color: #b388ff;
+	border-radius: 3px;
+	box-shadow: -5px 0 10px rgba(0.1,0.1,0.1,0.3);
+	width: 1385px;
+	height: 70px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.windownine .ligue{
+	float: left;
+	font-family:Raleway;
+	font-size: 15px;
+	margin-top: 25px;
+	margin-left: 7px;
+}
+
+
+.windownine .firstteam img{
+	height: 10px;
+	width: 25px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.windownine .firstteam{
+	float: left;
+	margin-left:180px;
+	margin-top: 15px;
+}
+
+
+.windownine .firstteam .country{
+	float: left;
+	width: 175px;
+	text-align:right;
+	font-family: Ubuntu;
+}
+.windownine .firstteam .teamone{
+	width: 200px;
+	text-align: right;
+	font-family:Ubuntu;
+}
+
+.time{
+	float: left;
+	text-align: center;
+	font-family: Ubuntu;
+	margin-top: 15px;
+	margin-left: 80px;
+}
+.windownine .secondteam img{
+	height: 10px;
+	float: left;
+	margin-top: 5px;
+	text-align: left;
+}
+
+.windownine .secondteam{
+	float: left;
+	margin-left:80px;
+	margin-top: 15px;
+}
+
+
+.windownine .secondteam .country{
+	float: left;
+	width: 175px;
+	text-align:left;
+	font-family: Ubuntu;
+	margin-left: 8px;
+}
+.windownine .secondteam .teamtwo{
+	width: 200px;
+	text-align: left;
+	font-family:Ubuntu;
+}
+
+
+/* Десятый матч */
+.windowten{
+	background-color: #b388ff;
+	border-radius: 3px;
+	box-shadow: -5px 0 10px rgba(0.1,0.1,0.1,0.3);
+	width: 1385px;
+	height: 70px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.windowten .ligue{
+	float: left;
+	font-family:Raleway;
+	font-size: 15px;
+	margin-top: 25px;
+	margin-left: 7px;
+}
+
+.windowten .firstteam img{
+	height: 10px;
+	width: 25px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+.windowten .firstteam{
+	float: left;
+	margin-left:180px;
+	margin-top: 15px;
+}
+
+
+.windowten .firstteam .country{
+	float: left;
+	width: 175px;
+	text-align:right;
+	font-family: Ubuntu;
+}
+.windowten .firstteam .teamone{
+	width: 200px;
+	text-align: right;
+	font-family:Ubuntu;
+}
+
+.time{
+	float: left;
+	text-align: center;
+	font-family: Ubuntu;
+	margin-top: 15px;
+	margin-left: 80px;
+}
+.windowten .secondteam img{
+	height: 10px;
+	float: left;
+	margin-top: 5px;
+	text-align: left;
+}
+
+.windowten .secondteam{
+	float: left;
+	margin-left:80px;
+	margin-top: 15px;
+}
+
+
+.windowten .secondteam .country{
+	float: left;
+	width: 175px;
+	text-align:left;
+	font-family: Ubuntu;
+	margin-left: 8px;
+}
+.windowten .secondteam .teamtwo{
+	width: 200px;
+	text-align: left;
+	font-family:Ubuntu;
+}

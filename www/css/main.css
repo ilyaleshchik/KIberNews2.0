@@ -147,20 +147,20 @@ body{
 	font-family: RalewayExtraBold;
 	float: left;
 	text-transform: uppercase;
-	font-size: 20px;
+	font-size: 15px;
 	color:#43415c;
 	margin-top: 15px;
 	margin-left: 10px;
 }
 
 .esl .price{
-	float: left;
+	float: right;
 	font-family: Quantum;
 	font-size: 15px;
 	color:#fff;
 	text-transform: uppercase;
 	margin-top: 20px;
-	margin-left: 37px;
+	margin-right:10px;
 }
 .esl{
 	margin-left: 50px;

@@ -16,11 +16,11 @@
 				header('Location: /');
 			}else
 			{
-				$err[] = 'Incorrect password!!!';
+				$err[] = 'Неверный пароль!!!';
 			}
 		}else
 		{
-			$err[] = 'Invalid username!!! ';
+			$err[] = 'Неверное имя пользователя!!! ';
 		}
 		if(! empty($err))
 		{
@@ -38,7 +38,7 @@
 <div id="all">
 <form action="signup.php"  method="POST">
 	<div class="window">
-		<p>Log in</p>
+		<p>Вход</p>
 	<div class="login">
 		<input type="text" name="log" placeholder="Username">
 	</div>
@@ -46,10 +46,10 @@
 		<input type="password" name="p" placeholder="Password">
 	</div>
 	<div class="regist">
-		<p>if you don't have account at our site pleas regist at this <a href="login.php">page</a></p>
+		<p>Если у вас нет аккаунта на нашем сайте пожалуйсто зарегестрируйтесь на этой <a href="login.php">странице</a></p>
 	</div>
 	<div class="dologin">
-		<input type="submit" value="SignUp" name="do_login" />	
+		<input type="submit" value="Войти" name="do_login" />	
 	</div>
 	</div>
 </form>	

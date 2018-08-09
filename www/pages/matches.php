@@ -18,20 +18,20 @@
 			<nav>
 				<div class="menu">
 					<ul>
-					<a href="../index.php"><li>home</li></a>
-						<a href="#"><li>news</li></a>
-						<a href="#"><li>developments</li></a>
-						<a href="#"><li>about</li></a>
+					<a href="../index.php"><li>Главная</li></a>
+						<a href="#"><li>Новости</li></a>
+						<a href="#"><li>События</li></a>
+						<a href="#"><li>О нас</li></a>
 					</ul>
 				</div>
 			</nav>
 		<?php if(isset($_SESSION['loged_user'])) : ?>
 			<div class="signup">
-				<a href="pages/logout.php">log out</a>
+				<a href="pages/logout.php">Выйти</a>
 			</div>
 		<?php else : ?>	
 			<div class="signup">
-				<a href="pages/signup.php">sign up</a>
+				<a href="pages/signup.php">Войти</a>
 			</div>
 	    <?php endif; ?>
 		</div>
@@ -39,242 +39,35 @@
 	</header>
 	<section>
 		<div class="container">
-			<div class="window">
+			<?php 
+				$matches  = mysqli_query($connection,'SELECT * FROM  `matches`');
+				while($cat = mysqli_fetch_assoc($matches))
+				{
+					?>
+			 <div class="window">
 				<div class="ligue">
-					<p>EU Qualifier: Play Off</p>
+					<p><?php echo $cat['ligue'];  ?></p>
 				</div>
 				<div class="firstteam">
-					<p class="teamone"><strong>OpTic Gaming</strong></p>
-					<p class="country">United States</p>
-					<img src="../img/country.svg" alt="">
+					<p class="teamone"><strong><?php echo $cat['firstTeam'];  ?></strong></p>
+					<p class="country"><?php echo $cat['FirstCountry'];  ?></p>
+					<img src="../img/<?php echo $cat['fcimg'];  ?>" alt="">
 				</div> 
 				<div class="time">
-					<p>18:00</p>
-					<p>27.08.2018</p>
+					<p><?php echo $cat['time'];  ?></p>
+					<p><?php echo $cat['day'];  ?></p>
 				</div>
 				<div class="secondteam">
-					<p class="teamtwo"><strong>OpTic Gaming</strong></p>
-					<img src="../img/country.svg" alt="">
-					<p class="country">United States</p>
+					<p class="teamtwo"><strong><?php echo $cat['secondTeam'];  ?></strong></p>
+					<img src="../img/<?php echo $cat['dcimg'];  ?>" alt="">
+					<p class="country"><?php echo $cat['SecondCountry'];  ?></p>
 				</div> 
 			</div>
+					<?php
+				}
+			?>
 		</div>
-	</section>
-	<!--Второй матч-->
-	<section>
-		<div class="container">
-			<div class="windowtwo">
-				<div class="ligue">
-					<p>EU Qualifier: Play Off</p>
-				</div>
-				<div class="firstteam">
-					<p class="teamone"><strong>OpTic Gaming</strong></p>
-					<p class="country">United States</p>
-					<img src="../img/country.svg" alt="">
-				</div> 
-				<div class="time">
-					<p>18:00</p>
-					<p>27.08.2018</p>
-				</div>
-				<div class="secondteam">
-					<p class="teamtwo"><strong>OpTic Gaming</strong></p>
-					<img src="../img/country.svg" alt="">
-					<p class="country">United States</p>
-				</div> 
-			</div>
-		</div>
-	</section>
-<!--Третий матч-->
-	<section>
-		<div class="container">
-			<div class="windowthree">
-				<div class="ligue">
-					<p>EU Qualifier: Play Off</p>
-				</div>
-				<div class="firstteam">
-					<p class="teamone"><strong>OpTic Gaming</strong></p>
-					<p class="country">United States</p>
-					<img src="../img/country.svg" alt="">
-				</div> 
-				<div class="time">
-					<p>18:00</p>
-					<p>27.08.2018</p>
-				</div>
-				<div class="secondteam">
-					<p class="teamtwo"><strong>OpTic Gaming</strong></p>
-					<img src="../img/country.svg" alt="">
-					<p class="country">United States</p>
-				</div> 
-			</div>
-		</div>
-	</section>
-	<!--Четвертый матч-->
-	<section>
-		<div class="container">
-			<div class="windowfour">
-				<div class="ligue">
-					<p>EU Qualifier: Play Off</p>
-				</div>
-				<div class="firstteam">
-					<p class="teamone"><strong>OpTic Gaming</strong></p>
-					<p class="country">United States</p>
-					<img src="../img/country.svg" alt="">
-				</div> 
-				<div class="time">
-					<p>18:00</p>
-					<p>27.08.2018</p>
-				</div>
-				<div class="secondteam">
-					<p class="teamtwo"><strong>OpTic Gaming</strong></p>
-					<img src="../img/country.svg" alt="">
-					<p class="country">United States</p>
-				</div> 
-			</div>
-		</div>
-	</section>
-		<!--Пятый матч-->
-	<section>
-		<div class="container">
-			<div class="windowfife">
-				<div class="ligue">
-					<p>EU Qualifier: Play Off</p>
-				</div>
-				<div class="firstteam">
-					<p class="teamone"><strong>OpTic Gaming</strong></p>
-					<p class="country">United States</p>
-					<img src="../img/country.svg" alt="">
-				</div> 
-				<div class="time">
-					<p>18:00</p>
-					<p>27.08.2018</p>
-				</div>
-				<div class="secondteam">
-					<p class="teamtwo"><strong>OpTic Gaming</strong></p>
-					<img src="../img/country.svg" alt="">
-					<p class="country">United States</p>
-				</div> 
-			</div>
-		</div>
-	</section>
-			<!--Шестой матч-->
-	<section>
-		<div class="container">
-			<div class="windowsix">
-				<div class="ligue">
-					<p>EU Qualifier: Play Off</p>
-				</div>
-				<div class="firstteam">
-					<p class="teamone"><strong>OpTic Gaming</strong></p>
-					<p class="country">United States</p>
-					<img src="../img/country.svg" alt="">
-				</div> 
-				<div class="time">
-					<p>18:00</p>
-					<p>27.08.2018</p>
-				</div>
-				<div class="secondteam">
-					<p class="teamtwo"><strong>OpTic Gaming</strong></p>
-					<img src="../img/country.svg" alt="">
-					<p class="country">United States</p>
-				</div> 
-			</div>
-		</div>
-	</section>
-		<!--Седьмой матч-->
-	<section>
-		<div class="container">
-			<div class="windowseven">
-				<div class="ligue">
-					<p>EU Qualifier: Play Off</p>
-				</div>
-				<div class="firstteam">
-					<p class="teamone"><strong>OpTic Gaming</strong></p>
-					<p class="country">United States</p>
-					<img src="../img/country.svg" alt="">
-				</div> 
-				<div class="time">
-					<p>18:00</p>
-					<p>27.08.2018</p>
-				</div>
-				<div class="secondteam">
-					<p class="teamtwo"><strong>OpTic Gaming</strong></p>
-					<img src="../img/country.svg" alt="">
-					<p class="country">United States</p>
-				</div> 
-			</div>
-		</div>
-	</section>
-	<!--Восьмой матч-->
-	<section>
-		<div class="container">
-			<div class="windowseight">
-				<div class="ligue">
-					<p>EU Qualifier: Play Off</p>
-				</div>
-				<div class="firstteam">
-					<p class="teamone"><strong>OpTic Gaming</strong></p>
-					<p class="country">United States</p>
-					<img src="../img/country.svg" alt="">
-				</div> 
-				<div class="time">
-					<p>18:00</p>
-					<p>27.08.2018</p>
-				</div>
-				<div class="secondteam">
-					<p class="teamtwo"><strong>OpTic Gaming</strong></p>
-					<img src="../img/country.svg" alt="">
-					<p class="country">United States</p>
-				</div> 
-			</div>
-		</div>
-	</section>
-		<!--Девятый матч-->
-	<section>
-		<div class="container">
-			<div class="windownine">
-				<div class="ligue">
-					<p>EU Qualifier: Play Off</p>
-				</div>
-				<div class="firstteam">
-					<p class="teamone"><strong>OpTic Gaming</strong></p>
-					<p class="country">United States</p>
-					<img src="../img/country.svg" alt="">
-				</div> 
-				<div class="time">
-					<p>18:00</p>
-					<p>27.08.2018</p>
-				</div>
-				<div class="secondteam">
-					<p class="teamtwo"><strong>OpTic Gaming</strong></p>
-					<img src="../img/country.svg" alt="">
-					<p class="country">United States</p>
-				</div> 
-			</div>
-		</div>
-	</section>
-		<!--Десятый матч-->
-	<section>
-		<div class="container">
-			<div class="windowten">
-				<div class="ligue">
-					<p>EU Qualifier: Play Off</p>
-				</div>
-				<div class="firstteam">
-					<p class="teamone"><strong>OpTic Gaming</strong></p>
-					<p class="country">United States</p>
-					<img src="../img/country.svg" alt="">
-				</div> 
-				<div class="time">
-					<p>18:00</p>
-					<p>27.08.2018</p>
-				</div>
-				<div class="secondteam">
-					<p class="teamtwo"><strong>OpTic Gaming</strong></p>
-					<img src="../img/country.svg" alt="">
-					<p class="country">United States</p>
-				</div> 
-			</div>
-		</div>
+
 	</section>
 </body>
 </html>
